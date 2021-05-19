@@ -15,7 +15,6 @@ class Home extends Component {
   }
 // go back an unpack movie props
   render(){
-    console.log(this.state.movies)
       return(
         this.state.movies ?
         this.state.movies.results.map(movie => <MovieCard {...movie}/>) : <h1>No Movies</h1>
